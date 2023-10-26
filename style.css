@@ -94,6 +94,7 @@ ul li{
         background-size: cover;
         background-image: url(images/unchecked.png);
         background-position: center;
+        background-color: #ffffff;
         top: 8px;
         left: 18px;
     }
