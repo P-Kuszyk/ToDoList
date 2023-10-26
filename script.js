@@ -74,6 +74,7 @@ function sortTasks() {
   const inputsArr = JSON.parse(localStorage.getItem("data"));
 
   inputsArr.sort((a, b) => a.textValue.localeCompare(b.textValue));
+  inputsArr.sort((a, b) => Number(a.checked) - Number(b.checked));
 
   localStorage.setItem("data", JSON.stringify(inputsArr));
 
